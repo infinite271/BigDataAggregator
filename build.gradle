@@ -1,0 +1,52 @@
+apply plugin: 'java'
+
+version = '1.0'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+configurations {
+    provided
+    aspects
+}
+
+sourceSets {
+    main {
+        compileClasspath += configurations.provided
+    }
+}
+
+task(runBDA, dependsOn: 'classes', type: JavaExec) {
+    main = 'bda.Main'
+    classpath = sourceSets.main.runtimeClasspath
+    args 'GBP'
+}
+
+buildscript {
+    repositories {
+        maven {
+            url "https://maven.eveoh.nl/content/repositories/releases"
+        }
+    }
+
+    dependencies {
+        classpath "nl.eveoh:gradle-aspectj:1.5"
+    }
+}
+
+project.ext {
+    aspectjVersion = '1.8.5'
+}
+
+apply plugin: 'aspectj'
+
+
+dependencies {
+    compile group: 'com.google.guava', name: 'guava', version: '12.0'
+    testCompile "org.mockito:mockito-core:1.+"
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile("org.springframework.boot:spring-boot-starter-web:1.2.3.RELEASE")
+}
