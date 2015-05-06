@@ -8,7 +8,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -17,7 +17,7 @@ import java.nio.file.Paths;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@Component
+@Service
 public class ExchangeRateServiceImpl implements ExchangeRateService {
 
     private static final Logger log = org.slf4j.LoggerFactory.getLogger(ExchangeRateServiceImpl.class);
