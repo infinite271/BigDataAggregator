@@ -1,4 +1,4 @@
-package bda.model;
+package bda.domain;
 
 public class Transaction {
 
@@ -63,6 +63,6 @@ public class Transaction {
     }
 
     public String toString() {
-        return "bda.model.Transaction(partner=" + this.partner + ", currency=" + this.currency + ", amount=" + this.amount + ")";
+        return "bda.domain.Transaction(partner=" + this.partner + ", currency=" + this.currency + ", amount=" + this.amount + ")";
     }
 }

@@ -1,6 +1,6 @@
-package bda.infrastructure.assembler;
+package bda.infrastructure.assembler.transaction;
 
-import bda.model.Transaction;
+import bda.domain.Transaction;
 import org.springframework.stereotype.Component;
 
 @Component

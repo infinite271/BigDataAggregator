@@ -1,4 +1,4 @@
-package bda.model;
+package bda.domain;
 
 public class CurrencyPair {
 
@@ -63,6 +63,6 @@ public class CurrencyPair {
     }
 
     public String toString() {
-        return "bda.model.CurrencyPair(baseCurrency=" + this.baseCurrency + ", quoteCurrency=" + this.quoteCurrency + ")";
+        return "bda.domain.CurrencyPair(baseCurrency=" + this.baseCurrency + ", quoteCurrency=" + this.quoteCurrency + ")";
     }
 }

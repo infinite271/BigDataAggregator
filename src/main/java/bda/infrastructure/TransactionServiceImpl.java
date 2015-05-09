@@ -1,9 +1,9 @@
 package bda.infrastructure;
 
 import bda.domain.TransactionService;
-import bda.infrastructure.assembler.FileToTransactionAssembler;
-import bda.model.CurrencyPair;
-import bda.model.Transaction;
+import bda.infrastructure.assembler.transaction.FileToTransactionAssembler;
+import bda.domain.CurrencyPair;
+import bda.domain.Transaction;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

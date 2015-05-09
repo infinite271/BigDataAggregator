@@ -1,6 +1,6 @@
-package bda.infrastructure.assembler;
+package bda.infrastructure.assembler.exchangerate;
 
-import bda.model.CurrencyPair;
+import bda.domain.CurrencyPair;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.stereotype.Component;
 
