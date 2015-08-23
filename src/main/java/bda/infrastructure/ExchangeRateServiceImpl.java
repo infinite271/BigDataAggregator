@@ -1,8 +1,8 @@
 package bda.infrastructure;
 
 import bda.domain.ExchangeRateService;
-import bda.infrastructure.assembler.exchangerate.FileToExchangeRateAssembler;
 import bda.domain.CurrencyPair;
+import bda.infrastructure.assembler.exchangerate.FileToExchangeRateAssembler;
 import com.google.common.collect.Maps;
 import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
